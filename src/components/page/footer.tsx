@@ -1,69 +1,72 @@
 import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../../css/footer.css';
 const FooterComponent = () => {
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
     return (
-        <footer className="footer_area text-white py-14">
-            <div className="container mx-auto custom-padding ">
-                <div className="footer_top flex flex-wrap justify-between mb-10">
-                    <div className="w-33 md:w-1/3 mb-6">
-                        <div className="pl-10 pr-10">
-                            <div className="footer_logo mb-4">
-                                <a href="#">
-                                    <img src="./images/footer-logo-one.png" />
+        <footer className="text-white pt-14 bg-[#313a45]">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-[1170px]">
+                <div className="footer_top flex flex-wrap justify-between ">
+                    {/* Logo Section */}
+                    <div className="w-full md:w-1/3">
+                        <div className="px-4">
+                            <div className="footer_logo mb-5">
+                                <a href="#" aria-label="Footer Logo">
+                                    <img src="./images/footer-logo-one.png" alt="Footer Logo" />
                                 </a>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, conser adipiscing elit. In consectetur tincidunt dolor.</p><br />
-                            <ul>
-                                <li>
-                                    <p>
-                                        <i className="fas fa-map-marker-alt mr-2"></i>
-                                        ST Amsterdam, Finland,
-                                        <br />
-                                        <div className="pl-5">United Stats of AKY16 8PN</div>
-                                    </p>
-                                </li>
-                            </ul>
+                            <p className="my-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur tincidunt dolor.
+                            </p>
+                            <div className="flex mt-7">
+                                <img className="w-5 pt-1 pb-1 pr-2" src="./images/icon-section/google-map2.png" alt="Location Icon" />
+                                <p>ST Amsterdam, finland,</p>
+                            </div>
+                            <p className="pl-5 mb-7">United States of AKY16 8PN</p>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/3 mb-6">
-                        <div className="footer_widget">
-                            <h5 className="mb-4 font-serif uppercase text-xl">Quick Links</h5><br />
-                            <div className="flex flex-wrap">
-                                <div className="w-1/2">
+
+                    {/* Quick Links Section */}
+                    <div className="w-full md:w-1/3">
+                        <div className="px-4">
+                            <h5 className="mb-11 font-serif uppercase text-xl md:text-left pl-4 md:pl-0">
+                                Quick Links
+                            </h5>
+                            <div className="flex flex-wrap md:flex-row flex-col">
+                                <div className="w-full md:w-1/2">
                                     <ul>
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Rooms</a></li><br />
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Food & Drinks</a></li><br />
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Beach Venues</a></li><br />
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Amenities</a></li><br />
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Rooms</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Food & Drinks</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Beach Venues</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Amenities</a></li>
                                     </ul>
                                 </div>
-                                <div className="w-1/2">
+                                <div className="w-full md:w-1/2">
                                     <ul>
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Noordwijk</a></li><br />
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Wellness</a></li><br />
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Manifesto</a></li><br />
-                                        <li><a href="#" className="hover:text-blue-400 transition duration-300">Contact</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Noordwijk</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Wellness</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Manifesto</a></li>
+                                        <li className="mb-6"><a href="#" className="hover:text-blue-400 transition duration-300">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="w-full md:w-1/3 mb-6">
-                        <div className="footer_widget">
-                            <h5 className='uppercase font-serif text-xl'>We are global</h5><br />
-                            <div className="footer_map">
-                                <img src="./images/footer-map-two.jpg" className="mt-5" />
-                            </div>
+
+                    {/* Map Section */}
+                    <div className="w-full md:w-1/3">
+                        <div className="px-4">
+                            <h5 className="uppercase font-serif text-xl mb-11">We are global</h5>
+                            <a href="#" className="footer_map mt-5" aria-label="Global Map">
+                                <img src="./images/footer-map-two.jpg" alt="Global Map" />
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div className="text-center">
-                    <p>
-                        © 2015 <a href="#" className="hover:text-blue-400 transition duration-300">Hotelbooking.</a> All rights reserved
-                    </p>
-                </div>
+            </div>
+
+            {/* Copyright Section */}
+            <div className="text-center py-[50px] bg-[#313a45]">
+                <p>
+                    © 2015 <a href="#" className="hover:text-blue-400 transition duration-300">Hotelbooking</a>. All rights reserved.
+                </p>
             </div>
         </footer>
     );
